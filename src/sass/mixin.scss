@@ -1,16 +1,14 @@
-@mixin banner ($path: '', $size: cover, $repeat: no-repeat, $pos: center top) {
-    background-image: linear-gradient(0deg, rgba(241,218,138,1) 0%, rgba(233,130,131,0.9) 100%, rgba(0,212,255,0.1) 100%), 
-    url($path);
-    background-size: $size;
-    background-repeat: $repeat;
-    background-position: $pos;
+@mixin banner($path: "", $size: cover, $repeat: no-repeat, $pos: center top) {
+  background-size: $size;
+  background-repeat: $repeat;
+  background-position: $pos;
 }
-@mixin font_seting ($size, $height, $text_color){
-    font-size: $size;
-    line-height: $height;
-    color: $text_color;
+@mixin font_seting($size, $height, $text_color) {
+  font-size: $size;
+  line-height: $height;
+  color: $text_color;
 }
-@mixin flex_box ($flex, $content){
-    display: $flex;
-    justify-content: $content;
+@mixin flex_box($flex, $content) {
+  display: $flex;
+  justify-content: $content;
 }
